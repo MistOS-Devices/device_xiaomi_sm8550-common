@@ -32,3 +32,13 @@ qemu.hw.mainkeys=0
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=33,33
+
+# About Phone
+ro.mist.display=1080 x 2400, 120 hz
+ro.mist.battery=4500 mAh
+ro.mist.soc=Snapdragon 8 Gen 2 (4 nm)
+ro.mist.camera=50MP + 10MP + 12MP
+ro.mist.front=32MP
+ro.mist.platform=SM8550-AB
+ro.mist.screen=6.36" AMOLED, HDR10+
+ro.mist.device.name=Xiaomi 13
