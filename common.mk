@@ -216,6 +216,10 @@ $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+# Media
+PRODUCT_PACKAGES += \
+    libcodec2_hidl_shim
+
 # ModemManager
 PRODUCT_PACKAGES += \
     libqesdk_manager_32bit_stub \
