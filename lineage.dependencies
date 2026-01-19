@@ -14,5 +14,9 @@
   {
     "repository": "android_kernel_xiaomi_sm8550-modules",
     "target_path": "kernel/xiaomi/sm8550-modules"
+  },
+  {
+    "repository": "android_packages_apps_EuiccPolicy",
+    "target_path": "packages/apps/EuiccPolicy"
   }
 ]
