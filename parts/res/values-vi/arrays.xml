@@ -20,6 +20,7 @@
         <item>2GB</item>
         <item>4GB</item>
         <item>8GB</item>
+        <item>12GB</item>
         <item>Linh động(Mặc định)</item>
     </string-array>
     <string-array name="zram_size_values">

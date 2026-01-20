@@ -112,7 +112,8 @@ public class ZramSettingsFragment extends PreferenceFragment
             case 2: summary = getString(R.string.zram_size_2gb); break;
             case 4: summary = getString(R.string.zram_size_4gb); break;
             case 8: summary = getString(R.string.zram_size_8gb); break;
-            default: summary = getString(R.string.zram_size_dynamic);
+            case 12: summary = getString(R.string.zram_size_12gb); break;
+            default: summary = getString(R.string.zram_size_12gb);
         }
         mZramSizePreference.setSummary(summary);
     }

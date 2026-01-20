@@ -64,6 +64,7 @@
     <string name="zram_size_2gb">2GB</string>
     <string name="zram_size_4gb">4GB</string>
     <string name="zram_size_8gb">8GB</string>
+    <string name="zram_size_12gb">12 GB</string>
     <string name="zram_summary">Chọn dung lượng Ram ảo để áp dụng</string>
     <string name="zram_change_applied">Đã lưu Ram ảo (Phải khởi động lại thiết bị)</string>
     <string name="zram_reboot_recommended">Để thay đổi có hiệu lực, vui lòng khởi động lại thiết bị của bạn</string>

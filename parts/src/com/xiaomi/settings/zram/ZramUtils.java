@@ -73,15 +73,15 @@ public class ZramUtils {
         
         // Fall back to SharedPreferences
         try {
-            return Integer.parseInt(mSharedPrefs.getString(PREF_ZRAM_SIZE, "-1"));
+            return Integer.parseInt(mSharedPrefs.getString(PREF_ZRAM_SIZE, "12"));
         } catch (Exception e) {
-            return -1; // Default to dynamic size
+            return 12; // Default to dynamic size
         }
     }
 
     public void setZramSize(int size) {
         // Validate input
-        if (size != 0 && size != 2 && size != 4 && size != 8 && size != -1) {
+        if (size != 0 && size != 2 && size != 4 && size != 8 && size != 12 && size != -1) {
             Log.w(TAG, "Invalid ZRAM size: " + size);
             return;
         }

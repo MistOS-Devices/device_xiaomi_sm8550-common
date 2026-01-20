@@ -81,6 +81,7 @@
     <string name="zram_size_2gb">2 ГБ</string>
     <string name="zram_size_4gb">4 ГБ</string>
     <string name="zram_size_8gb">8 ГБ</string>
+    <string name="zram_size_12gb">12 ГБ</string>
     <string name="zram_summary">Выберите настройки ZRAM</string>
     <string name="zram_change_applied">Настройки ZRAM сохранены (вступят в силу после перезагрузки)</string>
     <string name="zram_reboot_recommended">Для применения изменений перезагрузите устройство</string>
