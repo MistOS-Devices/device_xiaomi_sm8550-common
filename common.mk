@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+PARTS_DIR := $(LOCAL_PATH)/parts/src/com/xiaomi/settings
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
@@ -443,3 +445,7 @@ PRODUCT_PACKAGES += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
+PRODUCT_COPY_FILES += \
+    $(PARTS_DIR)/zram/zram_config.sh:$(TARGET_COPY_OUT_VENDOR)/bin/zram_config.sh \
+    $(PARTS_DIR)/zram/init.zram.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.zram.rc
