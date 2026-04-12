@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Redmi K60 Pro (OS3.0.4.0.VMKCNXM).
+## are from Redmi K60 Pro (OS3.0.5.0.VMKCNXM).
 
 # ACDBs
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
@@ -29,8 +29,6 @@ odm/lib64/libaudioroute_ext.so
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy
-vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
 vendor/etc/kvh2xml.xml
 vendor/etc/misound_asc_model.tflite
 vendor/lib64/libPeripheralStateUtils.so
@@ -47,17 +45,12 @@ vendor/lib64/libmisoundsa.so
 vendor/lib64/libpal_net_if.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libresampler.so
-vendor/lib64/libspatializerparamstorage.so
 vendor/lib64/libvui_dmgr_client.so
 vendor/lib64/libxlog.so
 
 # Audio FX modules
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libquasar.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/soundfx/libswvqe.so
 
 # BatterySecret
 vendor/bin/batterysecret
@@ -192,9 +185,6 @@ vendor/lib64/libDspIOProxy_stub.so
 vendor/lib64/libMapService.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libnanopb.so
-
-# Charger
-vendor/etc/charger_fw_fstab.qti
 
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -373,33 +363,6 @@ vendor/lib64/vendor.display.color@1.6.so
 vendor/lib64/vendor.display.color@1.7.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# Dolby
-vendor/bin/hw/dolbycodec2
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-vendor/bin/hw/vendor.dolby.media.c2@1.0-service
-vendor/etc/dolby/dax-default.xml
-vendor/etc/init/dolbycodec2.rc
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
-vendor/lib64/c2.dolby.client.so
-vendor/lib64/c2.dolby.hevc.dec.so
-vendor/lib64/c2.dolby.hevc.enc.so
-vendor/lib64/c2.dolby.hevc.sec.dec.so
-vendor/lib64/c2.dolby.store.so
-vendor/lib64/libDecoderProcessor.so
-vendor/lib64/libEncoderProcessor.so
-vendor/lib64/libcodec2_soft_ac4dec.so
-vendor/lib64/libcodec2_soft_ddpdec.so
-vendor/lib64/libcodec2_store_dolby.so
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdeccfg.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libdolbyottcameracontrol.so
-vendor/lib64/libeglcore.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
-
 # Dumpstate
 vendor/bin/hw/android.hardware.dumpstate-service.xiaomi
 vendor/etc/init/dumpstate-xiaomi.rc
@@ -549,10 +512,6 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics
-vendor/etc/permissions/android.software.opengles.deqp.level.xml
-vendor/etc/permissions/android.software.vulkan.deqp.level.xml
-
 # Graphics (Adreno firmware)
 odm/firmware/a740_zap.b00
 odm/firmware/a740_zap.b01
@@ -660,6 +619,8 @@ vendor/etc/init/imsdaemon.rc
 vendor/etc/seccomp_policy/imsrtp.policy
 vendor/etc/vintf/manifest/imsdcservice-saidl.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.radio.ims.xml
+vendor/etc/xiaomi_ecc_list.xml
+vendor/etc/xiaomi_ecc_list_preference.xml
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so
@@ -725,25 +686,6 @@ vendor/bin/hw/android.hardware.identity-service-qti
 vendor/etc/init/android.hardware.identity-service-qti.rc
 vendor/etc/vintf/manifest/manifest_identity_credential.xml
 vendor/lib64/libqtiidentitycredential.so
-
-# Init
-vendor/bin/init.class_main.sh
-vendor/bin/init.kernel.post_boot-kalama.sh
-vendor/bin/init.kernel.post_boot.sh
-vendor/bin/init.qcom.early_boot.sh
-vendor/bin/init.qcom.sh
-vendor/etc/init/hw/init.qcom.factory.rc
-vendor/etc/init/hw/init.qcom.rc
-vendor/etc/init/hw/init.qti.kernel.rc
-vendor/etc/init/hw/init.target.rc
-vendor/etc/init/vendor.qti.diag_userdebug.rc
-
-# Kernel
-vendor/bin/init.qcom.class_core.sh
-vendor/bin/init.qcom.post_boot.sh
-vendor/bin/init.qti.kernel.sh
-vendor/bin/system_dlkm_modprobe.sh
-vendor/bin/vendor_modprobe.sh
 
 # Keymaster
 vendor/bin/hw/android.hardware.security.keymint-service-qti
@@ -841,14 +783,9 @@ vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
 # Media configs
 odm/etc/media_profiles_kalama.xml
 vendor/etc/media_kalama/video_system_specs.json
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_c2_audio.xml
-vendor/etc/media_codecs_dolby_audio.xml
-vendor/etc/media_codecs_kalama.xml
-vendor/etc/media_codecs_kalama_vendor.xml
+vendor/etc/media_codecs_kalama_vendor.xml:vendor/etc/media_codecs_kalama.xml;TRYSRCFIRST
+vendor/etc/media_codecs_performance_kalama_vendor.xml:vendor/etc/media_codecs_performance_kalama.xml;TRYSRCFIRST
 vendor/etc/media_codecs_kalama_vendor_without_dvenc.xml
-vendor/etc/media_codecs_performance_kalama.xml
-vendor/etc/media_codecs_performance_kalama_vendor.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 
@@ -972,16 +909,31 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # QCC
+system_ext/app/QCC/QCC.apk
+system_ext/bin/qccsyshal@1.2-service
+system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc
+system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
+system_ext/lib64/libqcc.so
+system_ext/lib64/libqcc_file_agent_sys.so
+system_ext/lib64/libqccdme.so
+system_ext/lib64/libqccfileservice.so
+system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
+system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
+system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
+system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
+system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/bin/qcc-vendor
 vendor/etc/init/init.qccvendor.rc
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqcc_sdk.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=-vendor
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=-vendor
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so;MODULE_SUFFIX=-vendor
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
-vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=-vendor
 
 # QCV
 vendor/bin/init.qti.qcv.sh
@@ -996,7 +948,6 @@ vendor/lib64/vendor.qti.qegahal-impl.so
 
 # QMI
 system/etc/sysconfig/qti_whitelist.xml
-vendor/bin/init.qti.write.sh
 vendor/bin/irsc_util
 vendor/bin/qmipriod
 vendor/bin/qrtr-cfg
@@ -1057,6 +1008,10 @@ vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
 vendor/etc/seccomp_policy/qspm.policy
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
+
+# RIL (Esim hooking) - from fuxi OS2.0.200.7.VMCCNXM
+system_ext/framework/mirilhook.jar|1eef4d279b1180ae5ea4095a20ebd18891a9dae5
+system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|cdbd5157e63394d1ce96630f88de5186f9d821d9
 
 # RIL
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -1340,10 +1295,6 @@ vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.1.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.2.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
-
-# Uevent
-odm/etc/ueventd.rc
-vendor/etc/ueventd.rc
 
 # VPP
 vendor/bin/vppservice

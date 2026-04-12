@@ -261,4 +261,3 @@ ro.hardware.wlan.mimo=1
 ro.hardware.wlan.vendor=qcom
 ro.vendor.net.enable_passpoint_r1=1
 wifi.aware.interface=wifi-aware0
-
