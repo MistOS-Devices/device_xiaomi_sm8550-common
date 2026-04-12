@@ -193,9 +193,26 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # Init
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/init.sm8550.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sm8550.rc \
-    $(LOCAL_PATH)/init/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc
+PRODUCT_PACKAGES += \
+    init.qcom.rc \
+    init.qti.kernel.rc \
+    init.target.rc \
+    init.qcom.factory.rc \
+    init.sm8550.rc \
+    init.recovery.qcom.rc
+
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.kernel.post_boot-kalama.sh \
+    init.kernel.post_boot.sh \
+    init.qcom.class_core.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sh \
+    init.qti.kernel.sh \
+    init.qti.write.sh \
+    system_dlkm_modprobe.sh \
+    vendor_modprobe.sh
 
 # IPA
 PRODUCT_PACKAGES += \
