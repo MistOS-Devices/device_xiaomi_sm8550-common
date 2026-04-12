@@ -391,6 +391,11 @@ PRODUCT_COPY_FILES += \
 # Updatable APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Ueventd
+PRODUCT_PACKAGES += \
+    ueventd.qcom.rc \
+    ueventd-odm.rc
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
