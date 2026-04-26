@@ -7,6 +7,9 @@
             <instance>default</instance>
             <instance>ozoaudio</instance>
             <instance>software</instance>
+            <instance>dolby</instance>
+        </interface>
+    </hal>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
