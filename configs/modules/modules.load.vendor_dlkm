@@ -120,8 +120,8 @@ usbmon.ko
 repeater-qti-pmic-eusb2.ko
 repeater-i2c-eusb2.ko
 nb7vpq904m.ko
-pm8941-pwrkey.ko
 mtdoops.ko
+pm8941-pwrkey.ko
 mtd.ko
 qcom-hv-haptics.ko
 qti_battery_charger.ko
